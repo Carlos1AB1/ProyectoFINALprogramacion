@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Clínica de Psicología - Universidad Alexander Von Humboldt. Servicios profesionales de salud mental para estudiantes.">
+    <title>Clínica de Psicología - Bienestar Mental</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9fafc;
+            color: #333;
+            scroll-behavior: smooth;
+            line-height: 1.6;
+        }
+
+
+        .hero {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #ffffff;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .hero video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -2;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(30, 58, 138, 0.3);
+            z-index: -1;
+        }
+        .hero h1 {
+            font-size: 3.5rem;
+            font-family: 'Poppins', sans-serif;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+            font-weight: 700;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+        .btn-primary {
+            background-color: #dc143c;
+            color: white;
+            padding: 0.8em 2em;
+            font-weight: 500;
+            border: 2px solid transparent;
+            transition: 0.3s ease;
+            border-radius: 25px;
+        }
+        .btn-primary:hover {
+            background-color: #a90f2d;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+
+        .section-title {
+            font-family: 'Poppins', sans-serif;
+            color: #1e3a8a;
+            font-size: 2.5rem;
+            margin-bottom: 1em;
+            text-align: center;
+            position: relative;
+            font-weight: 700;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: #dc143c;
+            border-radius: 2px;
+        }
+
+
+        .services {
+            background-color: #f3f7fa;
+            padding: 4rem 1rem;
+        }
+        .service-card {
+            background-color: #ffffff;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            background-color: #e6eaf3;
+        }
+        .service-card h3 {
+            color: #1e3a8a;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .testimonials {
+            background: #ffffff;
+            padding: 4rem 1rem;
+            color: #3b4a4d;
+        }
+        .testimonial-card {
+            background-color: #f7f9fb;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            margin-bottom: 1.5rem;
+        }
+        .testimonial-card p {
+            font-size: 1rem;
+            font-style: italic;
+            color: #4a5d5b;
+        }
+        .testimonial-card .name {
+            font-weight: 700;
+            margin-top: 1rem;
+            color: #1e3a8a;
+        }
+
+
+        .footer {
+            background-color: #1e3a8a;
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        .footer a {
+            color: #c7dbeb;
+            margin: 0 8px;
+            transition: color 0.3s ease;
+        }
+        .footer a:hover {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+
+<header class="hero">
+    <video autoplay loop muted playsinline>
+        <source src="y2mate.com%20-%20Humboldt%20Somos%20la%20Universidad%20en%20la%20que%20puedes%20hacer%20la%20diferencia%202024_1080p.mp4" type="video/mp4">
+    </video>
+    <div>
+        <h1>Bienvenidos a la Clínica de Psicología</h1>
+        <p>Espacio seguro y profesional para cuidar de tu bienestar emocional.</p>
+        <a href="registroEstudiantes.html" class="btn-primary">Reserva tu Cita</a>
+    </div>
+</header>
+
+
+<section class="section services">
+    <h2 class="section-title">Nuestro Compromiso</h2>
+    <p class="text-xl leading-relaxed text-gray-700 max-w-3xl mx-auto text-center px-6">
+        En la Clínica de Psicología, promovemos el bienestar emocional de nuestros estudiantes en un ambiente de total confidencialidad y profesionalismo.
+    </p>
+</section>
+
+<section class="services" id="services">
+    <h2 class="section-title">Nuestros Servicios</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto px-6 mt-12">
+        <div class="service-card">
+            <h3>Confidencialidad</h3>
+            <p>Un entorno privado y seguro para todos nuestros estudiantes.</p>
+        </div>
+        <div class="service-card">
+            <h3>Horarios Flexibles</h3>
+            <p>Adaptamos nuestras citas a tus horarios para mayor comodidad.</p>
+        </div>
+        <div class="service-card">
+            <h3>Especialización</h3>
+            <p>Expertos en diferentes ramas de la psicología.</p>
+        </div>
+    </div>
+</section>
+
+
+<section class="testimonials" id="testimonials">
+    <h2 class="section-title">Testimonios</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto px-6 mt-12">
+        <div class="testimonial-card">
+            <p>La clínica me ayudó a superar mis ansiedades y encontrar equilibrio en mi vida.</p>
+            <p class="name">Estudiante de Psicología, 4to Semestre</p>
+        </div>
+        <div class="testimonial-card">
+            <p>Gracias a los psicólogos de la universidad, mejoré mi bienestar emocional y mi rendimiento académico.</p>
+            <p class="name">Estudiante de Ingeniería, 6to Semestre</p>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <p>&copy; 2024 Clínica de Psicología | Universidad Alexander Von Humboldt</p>
+    <div>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+</footer>
+
+</body>
+</html>
